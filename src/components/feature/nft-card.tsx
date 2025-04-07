@@ -18,6 +18,8 @@ import { Heart, MoreHorizontal, Share2 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { AnimatedCard } from "@/components/framer-animations";
+import { BuyNFTDrawer } from "@/components/buy-nft-drawer";
+import { SellNFTDrawer } from "@/components/sell-nft-drawer";
 
 interface NFTCardProps {
   nft: {
@@ -116,21 +118,10 @@ export function NFTCard({ nft, sellerView = false }: NFTCardProps) {
               <p className="text-xs text-muted-foreground">Not for sale</p>
             </div>
           )}
-          {!sellerView && nft.price && (
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button size="sm">Buy Now</Button>
-            </motion.div>
-          )}
-          {sellerView && (
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                size="sm"
-                variant={nft.status === "listed" ? "outline" : "default"}
-              >
-                {nft.status === "listed" ? "Edit Listing" : "List for Sale"}
-              </Button>
-            </motion.div>
-          )}
+
+          {!sellerView && nft.price && <BuyNFTDrawer nft={nft} />}
+
+          {sellerView && <SellNFTDrawer nft={nft} />}
         </CardFooter>
       </Card>
     </AnimatedCard>
