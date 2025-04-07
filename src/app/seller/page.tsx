@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { NFTCard } from "@/components/nft-card";
-import { WalletConnect } from "@/components/wallet-connect";
-import { SearchBar } from "@/components/search-bar";
-import { NFTFilters } from "@/components/nft-filters";
+import { NFTCard } from "@/components/feature/nft-card";
+import { WalletConnect } from "@/components/feature/wallet-connect";
+import { SearchBar } from "@/components/feature/search-bar";
+import { NFTFilters } from "@/components/feature/nft-filters";
 import { Plus, Upload, Wallet } from "lucide-react";
-import { AnimatedContainer } from "@/components/framer-animations";
+import { AnimatedContainer } from "@/components/feature/framer-animations";
 import { motion } from "framer-motion";
 
 // Mock NFT data for seller

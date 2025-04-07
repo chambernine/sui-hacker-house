@@ -17,9 +17,9 @@ import {
 import { Heart, MoreHorizontal, Share2 } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { AnimatedCard } from "@/components/framer-animations";
-import { BuyNFTDrawer } from "@/components/buy-nft-drawer";
-import { SellNFTDrawer } from "@/components/sell-nft-drawer";
+import { AnimatedCard } from "@/components/feature/framer-animations";
+import { BuyNFTDrawer } from "@/components/feature/buy-nft-drawer";
+import { SellNFTDrawer } from "@/components/feature/sell-nft-drawer";
 
 interface NFTCardProps {
   nft: {

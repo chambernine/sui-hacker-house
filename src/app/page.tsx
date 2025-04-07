@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button";
-import { NFTCard } from "@/components/nft-card";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { WalletConnect } from "@/components/wallet-connect";
-import { SearchBar } from "@/components/search-bar";
-import { CategoryTabs } from "@/components/category-tabs";
-import { CollectionTable } from "@/components/collection-table";
-import { FeaturedCollections } from "@/components/featured-collections";
-import { FeaturedCarousel } from "@/components/featured-carousel";
+import { NFTCard } from "@/components/feature/nft-card";
+import { ThemeToggle } from "@/components/feature/theme-toggle";
+import { WalletConnect } from "@/components/feature/wallet-connect";
+import { SearchBar } from "@/components/feature/search-bar";
+import { CategoryTabs } from "@/components/feature/category-tabs";
+import { CollectionTable } from "@/components/feature/collection-table";
+import { FeaturedCollections } from "@/components/feature/featured-collections";
+import { FeaturedCarousel } from "@/components/feature/featured-carousel";
 import Link from "next/link";
 import { ArrowUpRight, ChevronDown, Sparkles } from "lucide-react";
-import { AnimatedContainer } from "@/components/framer-animations";
+import { AnimatedContainer } from "@/components/feature/framer-animations";
 
 // Mock NFT data
 const nfts = [

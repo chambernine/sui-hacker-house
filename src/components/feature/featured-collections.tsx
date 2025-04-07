@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { AnimatedContainer } from "@/components/framer-animations";
+import { AnimatedContainer } from "@/components/feature/framer-animations";
 
 export function FeaturedCollections() {
   return (

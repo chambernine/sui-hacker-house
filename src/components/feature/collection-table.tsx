@@ -4,7 +4,7 @@ import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
-import { AnimatedContainer } from "@/components/framer-animations";
+import { AnimatedContainer } from "@/components/feature/framer-animations";
 
 // Mock collection data
 const collections = [

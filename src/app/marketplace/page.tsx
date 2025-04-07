@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { NFTCard } from "@/components/nft-card";
-import { SearchBar } from "@/components/search-bar";
-import { NFTFilters } from "@/components/nft-filters";
-import { CollectionFilters } from "@/components/collection-filters";
-import { CategoryTabs } from "@/components/category-tabs";
+import { NFTCard } from "@/components/feature/nft-card";
+import { SearchBar } from "@/components/feature/search-bar";
+import { NFTFilters } from "@/components/feature/nft-filters";
+import { CollectionFilters } from "@/components/feature/collection-filters";
+import { CategoryTabs } from "@/components/feature/category-tabs";
 import { Grid, LayoutGrid, ListFilter } from "lucide-react";
-import { AnimatedContainer } from "@/components/framer-animations";
+import { AnimatedContainer } from "@/components/feature/framer-animations";
 
 // Mock NFT data
 const marketplaceNfts = [
